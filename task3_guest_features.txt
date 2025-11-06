@@ -1,0 +1,26 @@
+--- Task 3: Guest Features Verification ---
+vboxsf                 98304  1
+vboxguest             503808  5 vboxsf
+/boot/config-6.8.0-40-generic:CONFIG_GUEST_PERF_EVENTS=y
+/boot/config-6.8.0-40-generic:CONFIG_HYPERVISOR_GUEST=y
+/boot/config-6.8.0-40-generic:CONFIG_XEN_PVHVM_GUEST=y
+/boot/config-6.8.0-40-generic:CONFIG_KVM_GUEST=y
+/boot/config-6.8.0-40-generic:CONFIG_JAILHOUSE_GUEST=y
+/boot/config-6.8.0-40-generic:CONFIG_ACRN_GUEST=y
+/boot/config-6.8.0-40-generic:CONFIG_INTEL_TDX_GUEST=y
+/boot/config-6.8.0-40-generic:CONFIG_KVM_XFER_TO_GUEST_WORK=y
+/boot/config-6.8.0-40-generic:CONFIG_VBOXGUEST=m
+/boot/config-6.8.0-40-generic:CONFIG_SEV_GUEST=m
+/boot/config-6.8.0-40-generic:CONFIG_TDX_GUEST_DRIVER=m
+/boot/config-6.8.0-87-generic:CONFIG_GUEST_PERF_EVENTS=y
+/boot/config-6.8.0-87-generic:CONFIG_HYPERVISOR_GUEST=y
+/boot/config-6.8.0-87-generic:CONFIG_XEN_PVHVM_GUEST=y
+/boot/config-6.8.0-87-generic:CONFIG_KVM_GUEST=y
+/boot/config-6.8.0-87-generic:CONFIG_JAILHOUSE_GUEST=y
+/boot/config-6.8.0-87-generic:CONFIG_ACRN_GUEST=y
+/boot/config-6.8.0-87-generic:CONFIG_INTEL_TDX_GUEST=y
+/boot/config-6.8.0-87-generic:CONFIG_KVM_XFER_TO_GUEST_WORK=y
+/boot/config-6.8.0-87-generic:CONFIG_VBOXGUEST=m
+/boot/config-6.8.0-87-generic:CONFIG_SEV_GUEST=m
+/boot/config-6.8.0-87-generic:CONFIG_TDX_GUEST_DRIVER=m
+Conclusion: The kernel is correctly configured (e.g., CONFIG_HYPERVISOR_GUEST=y) and the necessary VirtualBox kernel modules (vboxguest, vboxsf) are loaded, confirming this Linux installation is optimized for a VM environment.
