@@ -1,0 +1,1 @@
+VirtualBox Guest Additions were confirmed as pre-installed (version 6.1.50-dfsg-1~ubuntu1.22.04.3).
